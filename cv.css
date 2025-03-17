@@ -4,6 +4,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .cv-header {
@@ -164,13 +165,24 @@ li:before {
     color: var(--text-color);
 }
 
+@media (max-width: 1024px) {
+    .cv-container {
+        max-width: 800px;
+        padding: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .cv-container {
-        padding: 1.5rem 1rem;
+        padding: 1.25rem;
     }
 
     .cv-header {
         margin-bottom: 2rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.6rem;
     }
 
     .contact-info {
@@ -185,18 +197,58 @@ li:before {
 
     .experience-header h3, .education-header h3 {
         max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cv-container {
+        padding: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.4rem;
+    }
+
+    .position {
+        font-size: 1rem;
+    }
+
+    .cv-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 
     .skills {
         grid-template-columns: 1fr;
-        gap: 1.25rem;
+        gap: 1rem;
     }
 
-    .skill-category {
-        margin-bottom: 0.75rem;
+    .about {
+        font-size: 0.95rem;
     }
 
-    .cv-section {
-        margin-bottom: 2rem;
+    li {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .cv-container {
+        padding: 0.75rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .cv-section h2 {
+        font-size: 1.1rem;
     }
 }
