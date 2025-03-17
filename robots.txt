@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Allow: /cv.html
+Allow: /cv_en.html
+Allow: /index_en.html
+
+Sitemap: https://r03el.io/sitemap.xml
+
+# Общие правила кеширования
+Crawl-delay: 10
+
+# Специальные правила для основных поисковых систем
+User-agent: Googlebot
+Crawl-delay: 5
+
+User-agent: Yandexbot
+Crawl-delay: 5
+
+# Запрет на индексацию служебных файлов
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.txt$
+Disallow .gitignore
+Allow: /robots.txt 

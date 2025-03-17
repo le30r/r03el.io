@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>le30r</title>
+    <meta name="description" content="Иван Маринин (le30r) - Java Software Engineer. Разработка корпоративных приложений, микросервисов и веб-сервисов">
+    <meta name="keywords" content="Иван Маринин, le30r, Java разработчик, Software Engineer, Spring, микросервисы">
+    <meta name="author" content="Иван Маринин">
+    <meta property="og:title" content="Иван Маринин (le30r) - Java Software Engineer">
+    <meta property="og:description" content="Разработка корпоративных приложений, микросервисов и веб-сервисов">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://r03el.io">
+    <link rel="canonical" href="https://r03el.io">
+    <title>Иван Маринин (le30r) - Java Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main class="container">
-        <div class="header">
-            <div class="name">Иван Маринин</div>
-            <div class="nickname">a.k.a le30r</div>
-        </div>
+        <header class="header">
+            <h1 class="name">Иван Маринин</h1>
+            <div class="nickname" aria-label="псевдоним">a.k.a le30r</div>
+        </header>
         
-        <div class="content">
-            <div class="links">
-                <a href="https://le30r.xyz/">блог</a>
+        <nav class="content">
+            <div class="links" role="navigation" aria-label="основная навигация">
+                <a href="https://le30r.xyz/" aria-label="перейти в блог">блог</a>
                 <!-- <a href="/projects">проекты</a> -->
-                <a href="cv.html">cv</a>
-                <a href="https://github.com/le30r">github</a>
-                <a href="https://www.youtube.com/@le30r">youtube</a>
-                <a href="https://t.me/le30r">telegram</a>
-                <a href="https://t.me/r03el">tg канал</a>
+                <a href="cv.html" aria-label="посмотреть резюме">cv</a>
+                <a href="https://github.com/le30r" aria-label="GitHub профиль">github</a>
+                <a href="https://www.youtube.com/@le30r" aria-label="YouTube канал">youtube</a>
+                <a href="https://t.me/le30r" aria-label="личный Telegram">telegram</a>
+                <a href="https://t.me/r03el" aria-label="Telegram канал">tg канал</a>
             </div>
-            <div class="language-switcher">
-                <span class="current-lang">RU</span> | <a href="index_en.html">EN</a>
+            <div class="language-switcher" role="navigation" aria-label="выбор языка">
+                <span class="current-lang">RU</span> | <a href="index_en.html" hreflang="en" aria-label="switch to English">EN</a>
             </div>
-        </div>
+        </nav>
     </main>
 </body>
 </html> 
