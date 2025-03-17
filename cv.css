@@ -1,0 +1,202 @@
+.cv-container {
+    max-width: 900px;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-header {
+    margin-bottom: 2.5rem;
+}
+
+.header-content {
+    margin-bottom: 1rem;
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.position {
+    color: var(--link-color);
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.contact-info a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.cv-section {
+    margin-bottom: 2.5rem;
+}
+
+.cv-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 1.5rem;
+}
+
+.experience-header, .education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.experience-header h3, .education-header h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    max-width: 70%;
+}
+
+.date {
+    color: var(--link-color);
+    font-size: 0.9rem;
+}
+
+.company, .university {
+    color: var(--link-color);
+    margin-bottom: 0.75rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 1rem;
+    line-height: 1.4;
+}
+
+li:before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--link-color);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.skill-category {
+    margin-bottom: 0;
+}
+
+.skill-category h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    color: var(--link-color);
+}
+
+.skill-category p {
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.project-item {
+    margin-bottom: 1.5rem;
+}
+
+.project-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.project-item p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.project-item a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+.cv-footer {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--link-color);
+}
+
+.back-link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.about {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .cv-header {
+        margin-bottom: 2rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .experience-header, .education-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .experience-header h3, .education-header h3 {
+        max-width: 100%;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .skill-category {
+        margin-bottom: 0.75rem;
+    }
+
+    .cv-section {
+        margin-bottom: 2rem;
+    }
+}
