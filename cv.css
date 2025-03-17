@@ -1,6 +1,7 @@
 .cv-container {
+    width: 100%;
     max-width: 900px;
-    padding: 2rem;
+    padding: 1.5rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -65,7 +66,8 @@
 .experience-header h3, .education-header h3 {
     font-size: 1.1rem;
     font-weight: normal;
-    max-width: 70%;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .date {
@@ -174,25 +176,34 @@ li:before {
 
 @media (max-width: 768px) {
     .cv-container {
-        padding: 1.25rem;
+        padding: 1rem;
+        width: 100%;
     }
 
     .cv-header {
         margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .header-content {
+        width: 100%;
     }
 
     .header-content h1 {
         font-size: 1.6rem;
+        word-wrap: break-word;
     }
 
     .contact-info {
         flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
     }
 
     .experience-header, .education-header {
         flex-direction: column;
         gap: 0.25rem;
+        width: 100%;
     }
 
     .experience-header h3, .education-header h3 {
@@ -203,12 +214,13 @@ li:before {
     .skills {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     .cv-container {
-        padding: 1rem;
+        padding: 0.75rem;
     }
 
     .header-content h1 {
@@ -231,11 +243,13 @@ li:before {
 
     .about {
         font-size: 0.95rem;
+        word-wrap: break-word;
     }
 
     li {
         font-size: 0.95rem;
         margin-bottom: 0.5rem;
+        word-wrap: break-word;
     }
 }
 
