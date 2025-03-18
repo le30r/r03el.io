@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .header {
@@ -49,11 +49,9 @@ body {
 }
 
 .content {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     gap: 2rem;
 }
 
@@ -118,6 +116,48 @@ body {
 .current-lang {
     color: #333;
     font-weight: bold;
+}
+
+.posts {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.posts h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.post-link {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+.post-meta {
+    font-size: 0.8rem;
+    color: var(--secondary-text-color);
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-language {
+    text-transform: uppercase;
+}
+
+.post-date {
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
