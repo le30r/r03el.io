@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
-Allow: /cv.html
-Allow: /cv_en.html
 Allow: /index_en.html
+Allow: /robots.txt 
 
 Sitemap: https://r03el.io/sitemap.xml
 
@@ -24,4 +23,5 @@ Disallow: /*.json$
 Disallow: /*.md$
 Disallow: /*.txt$
 Disallow .gitignore
-Allow: /robots.txt 
+Disallow /cv.html
+Disallow /cv_en.html
